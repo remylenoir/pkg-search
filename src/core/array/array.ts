@@ -4,15 +4,10 @@
 export const Arr = {
   /**
    * Sorts an array with the given projection function.
-   * @param arr the array to be sorted.
    * @param projection projection function, returning the value to be compared from the value in the array.
    * @param order the sorting order, defaults to ascending (low to high)
+   * @param arr the array to be sorted.
    * @returns a sorted copy of the provided array.
-   * @example
-   * // returns { name: 'victor', age: 30 }
-   * const array = [{ name: 'joseph', age: 90 }, { name: 'victor', age: 30 }];
-   * const sorted = Arr.sortBy(x => x.age)(array);
-   * return sorted[0];
    */
   sortBy:
     <A, B>(projection: (a: A) => B, order: "asc" | "desc" = "asc") =>

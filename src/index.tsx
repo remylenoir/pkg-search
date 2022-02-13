@@ -2,13 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { appTheme, ThemeProvider, Preflight } from "framework";
+import { appTheme, ThemeProvider, Preflight, GlobalStyles } from "framework";
+import { SearchProvider } from "framework";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={appTheme}>
       <Preflight />
-      <App />
+      <GlobalStyles />
+
+      <SearchProvider>
+        <App />
+      </SearchProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
