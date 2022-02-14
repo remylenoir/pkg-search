@@ -32,7 +32,7 @@ export const SearchResultList: FC<SearchResultListProps> = ({
 
           {Arr.paginate(results, SEARCH_PAGE_SIZE, currentPage).map(
             (result, i) => (
-              <SearchResult key={result.repository_url + i} {...result} />
+              <SearchResult key={result.name + i} {...result} />
             )
           )}
 
