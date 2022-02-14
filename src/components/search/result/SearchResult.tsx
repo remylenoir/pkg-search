@@ -60,7 +60,7 @@ export const SearchResult: FC<SearchResultProps> = ({
                 )}
               </x.div>
 
-              <x.span fontSize="sm">from {owner}</x.span>
+              {owner && <x.span fontSize="sm">from {owner}</x.span>}
             </x.div>
 
             <x.p fontSize="sm">{description}</x.p>

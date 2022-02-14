@@ -5,5 +5,5 @@ export const GitHub = {
    * @returns the owner.
    */
   getOwner: (repositoryUrl: string): string =>
-    repositoryUrl.split("https://github.com/")[1].split("/")[0],
+    repositoryUrl?.split("https://github.com/")[1]?.split("/")[0] || "",
 };
