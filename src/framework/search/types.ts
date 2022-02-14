@@ -20,7 +20,7 @@ export type Package = {
   platform: string;
   rank: number;
   repository_license: string;
-  repository_url: string;
+  repository_url?: string;
   stars: number;
   status: string | null;
   versions: {
