@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/pkg-search/static/js/main.103a3f67.js",
+    "static/js/787.781258dc.chunk.js": "/pkg-search/static/js/787.781258dc.chunk.js",
+    "index.html": "/pkg-search/index.html",
+    "main.103a3f67.js.map": "/pkg-search/static/js/main.103a3f67.js.map",
+    "787.781258dc.chunk.js.map": "/pkg-search/static/js/787.781258dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.103a3f67.js"
+  ]
+}
